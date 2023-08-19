@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+:root {
+    --heading-color: #375e7b;
+    --color-red: #c01616;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.baricon {
+    display: none !important;
+}
+
+.hide {
+    display: none;
+}
+
+/* utils */
+
+.heading {
+    color: var(--heading-color);
+    font-size: 1.5vw;
+    font-weight: 500;
+
+}
+
+.SubHeading {
+    color: var(--color-red);
+    font-size: 1.2vw;
+
+}
+
+.para {
+    color: var(--heading-color);
+    font-size: 1vw;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.px10 {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.px20 {
+    padding-left: 20px;
+    padding-right: 20px
+}
+.pl20{
+    padding-left: 20px;
+}
+.pr20{
+    padding-right: 20px;
+}
+.py20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* utils end */
+
+/* navcss stat*/
+
+.mobileNavWrapper {
+    position: absolute;
+    right: 0;
+    top: 20;
+    background-color: #ffffff;
+    padding: 20px;
+
+}
+
+.mobileNavWrapper a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mobileNavWrapper a:hover {
+    color: #2b25a3;
+}
+
+/* navcss end */
+
+
+
+.header {
+    background-color: #ffffff;
+    padding: 0px 0px;
+    height: 47px;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.NavLinkWrapper a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.NavLinkWrapper a:hover {
+    color: #2b25a3;
+}
+
+/* banner css */
+
+.banner_wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.banner_wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.bannerText_Wrapper {
+    padding: 10px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    font-size: 1vw;
+}
+
+/* aboutus css */
+
+.about_head_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.about_head_wrapper img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* card section */
+
+.cardMainWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_wrapper {
+    width: 30%;
+}
+
+.cardImage {
+    border: 1px solid var(--heading-color);
+    width: 100%;
+    height: auto;
+}
+
+.card_subhead {
+    color: #c01616;
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+.cardpara {
+    font-size: 1vw;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+
+.unorderlist {
+    padding-left: 30px;
+}
+
+.unorderlist li {
+    line-height: 30px;
+}
+
+.aboutSectionTwo_Wrapper {
+    display: flex;
+}
+
+.aboutwoWrapperOne {
+    width: 70%;
+}
+
+.aboutwoWrapperTwo {
+    width: 30%;
+}
+.yogasection{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* footer css*/
+.footer_hr {
+    height: 2px;
+    background-color: var(--color-red);
+}
+
+.footerLink {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.footerLink a {
+    text-decoration: none;
+    font-size: 1vw;
+    color: var(--heading-color);
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .NavLinkWrapper {
+        display: none;
+    }
+
+    .baricon {
+        display: block !important;
+    }
+
+    .heading {
+        font-size: 5.5vw;
+    }
+
+    .SubHeading {
+        font-size: 4.2vw;
+    }
+
+    .para {
+        font-size: 3vw;
+    }
+
+
+
+    .cardMainWrapper {
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card_subhead {
+        font-size: 4vw;
+    }
+
+    .cardpara {
+        font-size: 3vw;
+    }
+
+    .aboutSectionTwo_Wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .aboutSectionTwo_Wrapper_second {
+        flex-direction: column;
+    }
+
+    .aboutwoWrapperOne {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .aboutwoWrapperTwo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .unorderlist li {
+        line-height: 20px;
+    }
+
+    .aboutwoWrapperTwo img {
+        width: 100%;
+    }
+    .yogasection{
+        padding: 0px;
+    }
+
+   .response{
+    padding: 0px 20px;
+   }
+
+    /* .aboutwoWrapperOne{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }  */
+
+    .footerLink a {
+        font-size: 3vw;
+        padding: 0px 2px;
+    }
+
+    .footer_hr {
+        height: .4px;
+    }
+}
+
+
+
+@media only screen and (max-width: 967px) {
+
+    .NavLinkWrapper {
+        display: none;
+    }
+
+    .baricon {
+        display: block !important;
+    }
+
+    .heading {
+        font-size: 5.5vw;
+    }
+    .yogasection{
+        padding: 0px;
+    }
+
+   .response{
+    padding: 0px 20px;
+   }
+    .SubHeading {
+        font-size: 4.2vw;
+    }
+
+    .para {
+        font-size: 3vw;
+    }
+
+
+    .cardMainWrapper {
+        flex-direction: column;
+    }
+
+    .card_wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card_subhead {
+        font-size: 4vw;
+    }
+
+    .cardpara {
+        font-size: 3vw;
+    }
+
+    .aboutSectionTwo_Wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .aboutSectionTwo_Wrapper_second {
+        flex-direction: column;
+    }
+
+    .aboutwoWrapperOne {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .aboutwoWrapperTwo {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .unorderlist li {
+        line-height: 30px;
+    }
+
+    .aboutwoWrapperTwo img {
+        width: 100%;
+    }
+
+    .footerLink a {
+        font-size: 3vw;
+        padding: 0px 2px;
+    }
+
+    .footer_hr {
+        height: .4px;
+    }
+}
